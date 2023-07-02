@@ -1,4 +1,4 @@
-package org.jxch.capital.gui.util;
+package org.jxch.capital.gui.support;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

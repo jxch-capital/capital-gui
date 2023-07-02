@@ -8,12 +8,11 @@
 
 <GridPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.jxch.capital.gui.controller.SettingController"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="org.jxch.capital.gui.controller.SettingController">
 
     <Label GridPane.columnIndex="0" GridPane.rowIndex="0">网络代理</Label>
     <Label GridPane.columnIndex="1" GridPane.rowIndex="1">Host</Label>
-    <TextField fx:id="host" GridPane.columnIndex="2" GridPane.rowIndex="1">localhost</TextField>
+    <TextField fx:id="host" GridPane.columnIndex="2" GridPane.rowIndex="1">127.0.0.1</TextField>
     <Label GridPane.columnIndex="1" GridPane.rowIndex="2">Port</Label>
     <TextField fx:id="port" GridPane.columnIndex="2" GridPane.rowIndex="2">10809</TextField>
     <Button onAction="#setProxy" GridPane.columnIndex="1" GridPane.rowIndex="3">设置</Button>

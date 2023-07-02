@@ -1,4 +1,4 @@
-package org.jxch.capital.gui.util;
+package org.jxch.capital.gui.support;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;

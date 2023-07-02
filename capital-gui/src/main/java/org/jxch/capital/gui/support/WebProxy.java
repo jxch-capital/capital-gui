@@ -1,4 +1,4 @@
-package org.jxch.capital.gui.util;
+package org.jxch.capital.gui.support;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jxch.capital.gui.config.AppSettingConfig;
@@ -15,9 +15,9 @@ import java.util.List;
 public class WebProxy {
 
 
-    public void proxy(@NonNull AppSettingConfig config) {
+    public void proxy(@NonNull AppSettingConfig.Proxy config) {
         Proxy proxy = new Proxy(Proxy.Type.HTTP,
-                new InetSocketAddress(config.getProxy().getHost(), config.getProxy().getPort()));
+                new InetSocketAddress(config.getHost(), config.getPort()));
 
         ProxySelector.setDefault(new ProxySelector() {
             @Override

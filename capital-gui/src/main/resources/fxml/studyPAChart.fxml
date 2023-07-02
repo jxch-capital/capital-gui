@@ -6,9 +6,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.jxch.capital.gui.controller.StudyPAChartController"
-            prefHeight="400.0" prefWidth="600.0">
-    <Label fx:id="labelTest">Hello</Label>
-</AnchorPane>
+            fx:controller="org.jxch.capital.gui.controller.StudyPAChartController">
+    <top>
+        <GridPane>
+            <TextField fx:id="symbol" maxWidth="100"  GridPane.columnIndex="0" GridPane.rowIndex="0">QQQ</TextField>
+            <Button onAction="#query"  GridPane.columnIndex="2" GridPane.rowIndex="0">查询</Button>
+        </GridPane>
+    </top>
+
+
+
+
+</BorderPane>

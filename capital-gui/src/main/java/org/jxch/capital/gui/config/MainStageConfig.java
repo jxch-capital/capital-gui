@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.jxch.capital.gui.CapitalGuiApp;
 import org.jxch.capital.gui.controller.MainController;
-import org.jxch.capital.gui.util.SpringContextHolder;
+import org.jxch.capital.gui.support.SpringContextHolder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;

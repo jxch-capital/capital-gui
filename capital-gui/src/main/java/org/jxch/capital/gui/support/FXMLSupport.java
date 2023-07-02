@@ -1,4 +1,4 @@
-package org.jxch.capital.gui.util;
+package org.jxch.capital.gui.support;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;
