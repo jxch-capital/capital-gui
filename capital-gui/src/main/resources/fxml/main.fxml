@@ -22,6 +22,7 @@
             <Menu text="交易系统">
             </Menu>
             <Menu text="设置">
+                <MenuItem text="全局设置" onAction="#setting"/>
             </Menu>
             <Menu text="关于">
             </Menu>

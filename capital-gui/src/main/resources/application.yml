@@ -1,4 +1,8 @@
 
 app:
   title: capital - price action
+  setting:
+    proxy:
+      host: 127.0.0.1
+      port: 10809
 

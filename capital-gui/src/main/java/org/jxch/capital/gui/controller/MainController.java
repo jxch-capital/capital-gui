@@ -6,6 +6,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.jxch.capital.gui.config.AppSettingConfig;
 import org.jxch.capital.gui.util.FXMLController;
 import org.jxch.capital.gui.util.FXMLSupport;
 
@@ -14,6 +15,8 @@ import org.jxch.capital.gui.util.FXMLSupport;
 @FXMLController(fxmlPath = "/fxml/main.fxml")
 public class MainController implements FXMLSupport {
     private final StudyPAChartController studyPAChartController;
+    private final SettingController settingController;
+    private final AppSettingConfig appSettingConfig;
 
     @FXML
     public BorderPane root;
@@ -28,7 +31,11 @@ public class MainController implements FXMLSupport {
     @FXML
     public void studyPAChart(ActionEvent actionEvent) {
         root.setCenter(studyPAChartController.getParent());
+        studyPAChartController.labelTest.setText(appSettingConfig.getProxy().getHost());
     }
 
+    public void setting(ActionEvent event) {
+        root.setCenter(settingController.getParent());
+    }
 
 }

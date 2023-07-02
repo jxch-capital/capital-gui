@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.jxch.capital.gui.controller.SettingController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="0">网络代理</Label>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="1">Host</Label>
+    <TextField fx:id="host" GridPane.columnIndex="2" GridPane.rowIndex="1">localhost</TextField>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="2">Port</Label>
+    <TextField fx:id="port" GridPane.columnIndex="2" GridPane.rowIndex="2">10809</TextField>
+    <Button onAction="#setProxy" GridPane.columnIndex="1" GridPane.rowIndex="3">设置</Button>
+
+</GridPane>
