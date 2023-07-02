@@ -12,7 +12,9 @@ public class FXMLFactory {
 
     public static Parent getParent(String fxmlPath) {
         try {
-            return FXMLLoader.load(Objects.requireNonNull(FXMLFactory.class.getResource(fxmlPath)));
+            FXMLLoader loader = new FXMLLoader(FXMLFactory.class.getResource(fxmlPath));
+            loader.setControllerFactory(SpringContextHolder.APP_CONTEXT::getBean);
+            return loader.load();
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
