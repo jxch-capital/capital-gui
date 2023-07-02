@@ -2,9 +2,9 @@ package org.jxch.capital.gui.config;
 
 import org.springframework.context.ApplicationEvent;
 
-public class JavaFxStartedEvent extends ApplicationEvent {
+public class CapitalGuiAppStartedEvent extends ApplicationEvent {
 
-    public JavaFxStartedEvent(String message) {
+    public CapitalGuiAppStartedEvent(String message) {
         super(message);
     }
 
